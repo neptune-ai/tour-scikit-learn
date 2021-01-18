@@ -8,10 +8,10 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
 # Create and fit random forest regressor
-parameters = {'n_estimators': 70,
-              'max_depth': 7,
+parameters = {'n_estimators': 77,
+              'max_depth': 5,
               'min_samples_split': 3,
-              'min_samples_leaf': 1}
+              'min_samples_leaf': 2}
 
 rfr = RandomForestRegressor(**parameters)
 X, y = load_boston(return_X_y=True)

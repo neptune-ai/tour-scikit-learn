@@ -8,10 +8,10 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import train_test_split
 
 # Create and fit gradient boosting classifier
-parameters = {'n_estimators': 120,
-              'learning_rate': 0.12,
+parameters = {'n_estimators': 100,
+              'learning_rate': 0.17,
               'min_samples_split': 3,
-              'min_samples_leaf': 2}
+              'min_samples_leaf': 1}
 
 gbc = GradientBoostingClassifier(**parameters)
 X, y = load_digits(return_X_y=True)
